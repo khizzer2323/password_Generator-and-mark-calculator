@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Oswald:wght@600&display=swap" rel="stylesheet">
+<link href="index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h2 class="app_h"> Result  Calculator</h2> 
+  <section class="sub">
+    <div class="content">
+   <h4>Enter your name :</h4>
+   <input type="text" id="userName" placeholder="name(optional) " style="text-align: center;">
+<h4>Expected marks of class 9th/1st Year : </h4>
+<div class="flex">
+    <input type="text" id="marksObtainedNine" placeholder=" obtained marks"> 
+    <input type="text" id="totalMarksNine" placeholder=" total  marks ">
+</div>
+    <h4>Expected marks of class 10th/2nd Year : </h4>
+<div class="flex">
+    <input type="text" id="marksObtainedTen" placeholder="obtained marks"> 
+    <input type="text" id="totalMarksTen" placeholder=" total  marks ">
+</div>
+    <center><button class="btn" onclick="findPercentage()">Check percentage</button></center>
+<div class="result">
+    <h5 class="resultName"> </h5>
+    <h4 class="result_h">Percentage : <span style="font-size:180%;" class="resultPercent"></span>
+    <h4 class="result_mark">Total Marks : <span class="resultTotal"> </span></h4>
+    <h4 class="marksObt">Marks Obtained : <span class="resultObt">  </span></h4>
+    </h4>
+</div>
+</div>
+  </section>
+
+  <footer class="footer">
+<a href="password.html"><button class="btn" >Password Generator</button></a>
+  </footer>
+  <div class="err hidden" onclick="error()">
+    
+<h1 class="err-h">X</h1>
+<h4 class="err-h4">Please check your input data.</h4>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
